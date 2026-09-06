@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taaza Tadka — Raseeli Juices, Malai Shakes &amp; Garam Fast Food</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-decor" aria-hidden="true">
+  <div class="blob-c"></div>
+</div>
+
+<nav>
+  <div class="logo"><span class="dot"></span>Taaza Tadka</div>
+  <div class="navlinks">
+    <a href="#juices">Juices</a>
+    <a href="#shakes">Shakes</a>
+    <a href="#food">Fast Food</a>
+    <a href="#story">Kahani</a>
+  </div>
+  <button class="navcta" onclick="document.getElementById('juices').scrollIntoView()">Menu Dekhain</button>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero wrap">
+  <div>
+    <h1>Taazgi Jo<br>Chakhni Padegi</h1>
+    <p class="lead">Taaza Tadka mein har juice, har shake aur har snack banta hai usi waqt, aapke saamne — na dabba, na dair.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary" id="heroCta">Order Karain</button>
+      <a href="#story" class="btn btn-ghost">Hamari Kahani</a>
+    </div>
+  </div>
+
+  <div class="hero-illustration">
+    <img src="org.webp" alt="Taaza fruit juices" loading="lazy">
+  </div>
+</section>
+
+<!-- ================= JUICES ================= -->
+<section id="juices">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Raseeli Juices</h2>
+      <p>Fresh fruit, seedhe seedhe glass mein — koi mixture nahi, sirf phal aur thodi si barf.</p>
+    </div>
+    <div class="menu-grid" id="juiceGrid"></div>
+  </div>
+</section>
+
+<!-- ================= SHAKES ================= -->
+<section id="shakes">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Malai Shakes</h2>
+      <p>Gaadhi, thandi aur creamy — har ghoont mein maza double.</p>
+    </div>
+    <div class="menu-grid" id="shakeGrid"></div>
+  </div>
+</section>
+
+<!-- ================= FAST FOOD ================= -->
+<section id="food">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Garam Fast Food</h2>
+      <p>Tawe se seedha plate tak — chatpata, crispy aur bilkul taaza.</p>
+    </div>
+    <div class="menu-grid" id="foodGrid"></div>
+  </div>
+</section>
+
+<!-- ================= STORY ================= -->
+<section id="story">
+  <div class="wrap story">
+    <div class="photo reveal">
+      <img src="main.jpg" alt="Taaza Tadka ka counter" loading="lazy">
+    </div>
+    <div class="reveal">
+      <blockquote>"Hum ne Taaza Tadka isliye banaya kyun ke ek achi juice ke liye ghanton wait nahi karna chahiye — bas taaza, foran, aur pyar se."</blockquote>
+      <p class="credit">— Taaza Tadka Team, Rawalpindi</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <h3>Taaza Tadka</h3>
+      <p style="margin-top:.8rem; max-width:32ch;">Raseeli juices, malai shakes aur garam fast food — sab ek hi chhat ke neeche.</p>
+    </div>
+    <div>
+      <h3 style="font-size:1.05rem;">Waqt</h3>
+      <p>Roz 11:00 AM – 12:00 AM</p>
+    </div>
+    <div>
+      <h3 style="font-size:1.05rem;">Rabta</h3>
+      <a href="tel:03469514472">0346-9514472</a>
+      <a href="#">Rawalpindi, Pakistan</a>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© 2026 Taaza Tadka</span>
+    <span>Banaya gaya pyar aur phal se</span>
+  </div>
+</footer>
+
+<!-- ================= SCROLL-DRIVEN ZINGER BURGER REVEAL ================= -->
+<div class="burger-builder" id="burgerBuilder" aria-hidden="true">
+  <div class="bb-badge" id="bbBadge">
+    <div class="bb-halo"></div>
+    <svg class="bb-ring" viewBox="0 0 120 120">
+      <circle class="bb-ring-track" cx="60" cy="60" r="54"></circle>
+      <circle class="bb-ring-progress" id="bbRingProgress" cx="60" cy="60" r="54"></circle>
+    </svg>
+    <div class="bb-photo-mask" id="bbPhotoMask"></div>
+  </div>
+  <div class="bb-label" id="bbLabel"><span id="bbLabelText">Scroll karo, taazgi dekho</span></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
